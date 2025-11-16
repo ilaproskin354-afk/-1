@@ -1,0 +1,3 @@
+
+function renderProfile(){ const u=JSON.parse(localStorage.getItem('rbx_user')||'null'); if(!u){ location.href='login.html'; return; } document.getElementById('pfNick').textContent = u.nick; const bal=Number(localStorage.getItem('rbx_balance')||0); document.getElementById('pfBal').textContent = 'Баланс: '+bal+' Robux'; const logs = JSON.parse(localStorage.getItem('rbx_logs')||'[]'); const box = document.getElementById('pfHistory'); box.innerHTML=''; logs.forEach(l=>{ const d=document.createElement('div'); d.textContent = new Date(l.time).toLocaleString() + ' | ' + (l.type||'') + ' | ' + (l.item||'') + ' | ' + (l.amount||''); box.appendChild(d); }); }
+document.addEventListener('DOMContentLoaded', renderProfile);

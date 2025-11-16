@@ -1,0 +1,27 @@
+[
+  {
+    "id": "premium",
+    "name": "Premium Case",
+    "price": 500
+  },
+  {
+    "id": "dominus",
+    "name": "Dominus Case",
+    "price": 1500
+  },
+  {
+    "id": "limited",
+    "name": "Limited U Case",
+    "price": 3000
+  },
+  {
+    "id": "pet",
+    "name": "Exclusive Pet Case",
+    "price": 800
+  },
+  {
+    "id": "random",
+    "name": "Random RBX Case",
+    "price": 200
+  }
+]
